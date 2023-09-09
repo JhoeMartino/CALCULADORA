@@ -135,23 +135,30 @@ public class Calculadora_IU extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSumarActionPerformed
 
     private void btnRestarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestarActionPerformed
+
         double nro1 = Double.parseDouble(txtNro1.getText());
         double nro2 = Double.parseDouble(txtNro1.getText());
 
-        double resta = nro1 - nro2;
-        JOptionPane.showMessageDialog(null, "La Resta Es : " + resta);
+        if (nro1 > nro2) {
+            double resta = nro1 - nro2;
+            JOptionPane.showMessageDialog(null, "La Resta Es : " + resta);
+        } else {
+            JOptionPane.showMessageDialog(null, "No se puede realizar la Resta");
+        }
+
+
     }//GEN-LAST:event_btnRestarActionPerformed
 
     private void btnSumar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumar2ActionPerformed
-        
+
     }//GEN-LAST:event_btnSumar2ActionPerformed
 
     private void btnDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDividirActionPerformed
         double nro1 = Double.parseDouble(txtNro1.getText());
-       double nro2 = Double.parseDouble(txtNro1.getText());
-       
-       double dividir = nro1 / nro2 ;
-       JOptionPane.showMessageDialog(null, "La Division Es : " + dividir);
+        double nro2 = Double.parseDouble(txtNro1.getText());
+
+        double dividir = nro1 / nro2;
+        JOptionPane.showMessageDialog(null, "La Division Es : " + dividir);
     }//GEN-LAST:event_btnDividirActionPerformed
 
     private void btnMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicarActionPerformed
