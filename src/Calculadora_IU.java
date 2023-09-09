@@ -157,8 +157,14 @@ public class Calculadora_IU extends javax.swing.JFrame {
         double nro1 = Double.parseDouble(txtNro1.getText());
         double nro2 = Double.parseDouble(txtNro1.getText());
 
-        double dividir = nro1 / nro2;
-        JOptionPane.showMessageDialog(null, "La Division Es : " + dividir);
+        if (nro1 > nro2) {
+            double dividir = nro1 / nro2;
+            JOptionPane.showMessageDialog(null, "La Division Es : " + dividir);
+        } else {
+            JOptionPane.showMessageDialog(null, "No se puede realizar la Division");
+        }
+
+
     }//GEN-LAST:event_btnDividirActionPerformed
 
     private void btnMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicarActionPerformed
